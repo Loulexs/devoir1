@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <ul class="nav">
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+              
+                </ul>
+            <p id="demo" style="font-size:40px; text-align:center; margin:-10px"></p>
+            <p style="text-align: center; font-size:25px; margin:-5px;">Avant le lancement!</p>
+            <p style="text-align: center; font-size:25px; margin:30px;">Vous trouverez sur cette page tous les classes jouable dans World of Warcraft Classic!</p>
+            <p style="text-align: center; font-size:25px; margin:30px;">Vous pouvez cliquer sur chacunes des icones pour en apprendre plus sur la classe</p>
+            
+            <a href="https://classic.wowhead.com/guides/classic-wow-warrior-class-overview" target="_blank"><img src="warrior_11.png" alt="Warrior" width="125" height="125"
+            style= margin-left:400px;margin-top:100px;></a>
+            <a href="https://classic.wowhead.com/guides/classic-wow-mage-class-overview" target="_blank"><img src="mage.jpg" alt="Mage" width="125" height="125"
+                style= margin-left:450px;margin-top:100px;></a>
+                <center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-mage-class-overview" target="_blank"><img src="pal.png" alt="Paladin" width="125" height="125"
+                    style= margin-top:-200px;></a>
+                </center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-shaman-class-overview" target="_blank"><img src="shaman.png" alt="Shaman" width="125" height="125"
+                    style= margin-left:400px;margin-top:100px;></a>
+                <center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-rogue-class-overview" target="_blank"><img src="rogue.png" alt="Rogue" width="125" height="125"
+                style= margin-top:-200px;></a>
+                </center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-druid-class-overview" target="_blank"><img src="druid.png" alt="Druid" width="125" height="125"
+                    style= margin-left:1000px;margin-top:-155px;></a>
+                <a href="https://classic.wowhead.com/guides/classic-wow-warlock-class-overview" target="_blank"><img src="warlock.png" alt="Warlock" width="125" height="125"
+                    style= margin-left:400px;margin-top:100px;></a>
+                <center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-hunter-class-overview" target="_blank"><img src="hunter.png" alt="Hunter" width="125" height="125"
+                style= margin-top:-200px;></a>
+                </center>
+                <a href="https://classic.wowhead.com/guides/classic-wow-priest-class-overview" target="_blank"><img src="priest.png" alt="Priest" width="125" height="125"
+                    style= margin-left:1000px;margin-top:-155px;></a>
+                
+                    <script>
+                            var countDownDate = new Date("Aug 29, 2019 18:00:00").getTime();
+                            var x = setInterval(function () {
+                            var now = new Date().getTime();
+                            var distance = countDownDate - now;
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            document.getElementById("demo").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+                               
+                            if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "EXPIRED";
+                                }
+                            }, 1000);
+                    
+                    
+                        </script>
+    </body>
+</html>

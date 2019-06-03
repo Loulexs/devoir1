@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="acceuil.html">Acceuil</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+   
+    </ul>
+    <p id="demo" style="font-size:40px; text-align:center; margin:-10px"></p>
+    <p style="text-align: center; font-size:25px; margin:-5px;">Avant le lancement!</p>
+
+    <img src="WoW_Classic_Main-1280x720.jpg" alt="Logo" width="1000" height="600"
+        style="display: block; margin-left: auto; margin-right: auto;margin-top:15px;" />
+    <h1>World of Warcraft Classic</h1>
+    <p style="text-align: center; font-size:35px;;margin-left: 15px;">Il y a deja 14 ans que nous
+        avons pour la premiere fois poser pieds dans Azeroth,
+        finalement apres des annees d'attente et des centaines de petitions en ligne Activison Blizzard
+        ont annoncer le lancement de World of Warcraft Classic pour le 29 aout 2019.</p>
+    <p style="text-align: center; font-size:25px;">Vous trouverez sur ce site des informations sur
+        le jeu, comment y jouer ainsi que quelques videos pour vous familiarisez avec le jeu.</p>
+
+    <center> 
+        <iframe width="900" height="550" src="https://www.youtube.com/embed/TcZyiYOzsSw" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    <script>
+        var countDownDate = new Date("Aug 29, 2019 18:00:00").getTime();
+        var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+           
+        if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+
+    </script>
+</body>
+<!-- ref: https://csswizardry.com/ -->
+
+</html>
